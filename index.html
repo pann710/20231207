@@ -9,10 +9,16 @@
 <h1>你好</h1>
 <p>安安。</p>
  
- <script>
-var d=new Date();
-document.write(d);
+<p id="demo">点击按钮获取今年的年份。</p>
+<button onclick="myFunction()">点我</button>
+<script>
+function myFunction(){
+	var d = new Date();
+	var x = document.getElementById("demo");
+	x.innerHTML=d.getFullYear();
+}
 </script>
+	
 	
 </body>
 </html>
